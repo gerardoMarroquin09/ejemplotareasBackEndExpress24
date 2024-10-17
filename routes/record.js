@@ -13,6 +13,7 @@ const dbo = require('../db/conn');
 recordRoutes.route('/').get(async function (_req, res) {
   res.status(200).send('Bienvenido al Backend!!' 
   + "<br> Hostname = " + os.hostname()
+  +"<br> <h2> Backend Dockerizado de: MA19074, Gerardo José Marroquín Alvarado </h2>"
   + "<br> OS = " + os.platform()
   + "<br> version = " + os.version()
   + "<br> Total Memoria "+ os.totalmem()  
